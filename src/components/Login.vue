@@ -2,7 +2,7 @@
     <div class="login_container">
         <div class="login_box">
             <div class="avater_box">
-                <img src="../assets/logo.png" >
+                <img src="../assets/asoul.jpg" >
             </div>
             <el-form :v-model="login_form" ref="login_form_ref" class="login_form">
                     <el-form-item >
@@ -50,6 +50,7 @@ export default {
     }
 }
 </script>
+
 <style lang="less" scoped>
 .login_container
 {
