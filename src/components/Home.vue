@@ -35,7 +35,7 @@
                         <i class="el-icon-tickets"></i>
                         <span>病历数据</span>
                     </template> 
-                    <el-menu-item index="/record_import">
+                    <el-menu-item index="/record_add">
                     <template slot="title">
                         <i class="el-icon-caret-right"></i>
                         <span>导入</span>
@@ -50,35 +50,23 @@
                 </el-submenu>
                 <el-submenu index="3">
                     <template slot="title">
-                        <i class="el-icon-full-screen"></i>
+                        <i class="el-icon-view"></i>
                         <span>影像数据</span>
                     </template> 
-                    <el-menu-item index="/image_import">
+                    <el-menu-item index="/image_add">
                     <template slot="title">
                         <i class="el-icon-caret-right"></i>
                         <span>导入</span>
                     </template> 
                     </el-menu-item>
-                    <el-menu-item index="/image_modify">
+                    <el-menu-item index="/image_show">
                     <template slot="title">
                         <i class="el-icon-caret-right"></i>
-                        <span>修改</span>
+                        <span>查看</span>
                     </template> 
                     </el-menu-item>
                 </el-submenu>
                 <el-submenu index="4">
-                    <template slot="title">
-                        <i class="el-icon-view"></i>
-                        <span>影像显示</span>
-                    </template> 
-                    <el-menu-item index="/image_show">
-                    <template slot="title">
-                        <i class="el-icon-caret-right"></i>
-                        <span>显示</span>
-                    </template> 
-                    </el-menu-item>
-                </el-submenu>
-                <el-submenu index="5">
                     <template slot="title">
                         <i class="el-icon-finished"></i>
                         <span>智能诊断</span>
@@ -90,7 +78,7 @@
                     </template> 
                     </el-menu-item>
                 </el-submenu>
-                <el-submenu index="6">
+                <el-submenu index="5">
                     <template slot="title">
                         <i class="el-icon-folder"></i>
                         <span>诊断记录</span>

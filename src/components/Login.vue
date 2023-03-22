@@ -4,20 +4,20 @@
             <div class="avater_box">
                 <img src="../assets/asoul.jpg" >
             </div>
-            <el-form :v-model="login_form" ref="login_form_ref" class="login_form">
-                    <el-form-item >
-                        <el-input v-model="login_form.username" placeholder="  请输入账号" prefix-icon="el-icon-user">
-                        </el-input>
-                    </el-form-item>
-                    <el-form-item >
-                        <el-input type="password" v-model="login_form.pwd" placeholder="  请输入密码" prefix-icon="el-icon-lock">
-                        </el-input>
-                    </el-form-item>
-                    <el-form-item class="buttons">
-                     <el-button type="primary" @click="login" round>登录</el-button>
-                     <el-button type="info" round>注册</el-button>
-                    </el-form-item>
-                </el-form>
+            <el-form :model="login_form" ref="login_form_ref" class="login_form">
+                <el-form-item >
+                    <el-input v-model="login_form.username" placeholder="  请输入账号" prefix-icon="el-icon-user">
+                    </el-input>
+                </el-form-item>
+                <el-form-item >
+                    <el-input type="password" v-model="login_form.pwd" placeholder="  请输入密码" prefix-icon="el-icon-lock">
+                    </el-input>
+                </el-form-item>
+                <el-form-item class="buttons">
+                    <el-button type="primary" @click="login" round>登录</el-button>
+                    <el-button type="info" round>注册</el-button>
+                </el-form-item>
+            </el-form>
         </div>
     </div>
 </template>
@@ -29,8 +29,8 @@ export default {
         return {
             login_form:
             {
-                username:"123",
-                pwd:""
+                username:123,
+                pwd:"",
             }   
             
         };
