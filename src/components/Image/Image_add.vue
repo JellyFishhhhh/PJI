@@ -9,11 +9,11 @@
             
             <!-- 病历号卡片区 -->
             <el-card>
-                <el-form :model="record_add_form" ref="login_form_ref" class="login_form" label-width="80px">
+                <el-form ref="login_form_ref" class="login_form" label-width="80px">
                     <el-row :gutter="0">
                         <el-col :span="8">
                             <el-form-item label="病历号" class="input" >
-                                <el-input v-model="record_add_form.RID" >
+                                <el-input v-model="RID" >
                                 </el-input>
                             </el-form-item>
                         </el-col>
@@ -28,7 +28,7 @@
                 style="margin-left: 7%;"
                 action="#"
                 list-type="picture-card"
-                :auto-upload="false">
+                :auto-upload="true">
                     <i slot="default" class="el-icon-plus"></i>
                     <div slot="file" slot-scope="{file}">
                     <img
@@ -63,19 +63,7 @@ export default {
     data()
     {
         return {
-            record_add_form:
-            {
-                RID: 1,
-                Rname: "柳先杰",
-                Rsex: "男",
-                Rdescribe: "阳性",
-                CRP: "",
-                ESR: "",
-                Aerobic: "",
-                Anaerobic: "",
-                Diabetes: "无",
-                Hypertension: "无",
-            },
+            RID: '',
             dialogImageUrl: '',
             dialogVisible: false,
         };
@@ -85,8 +73,6 @@ export default {
         // TODO:提交form的函数
         create()
         {
-            // 手动上传到服务器
-            this.$refs.upload.submit();
             this.$message.success('导入成功');
             this.$router.push("/home");
         },
